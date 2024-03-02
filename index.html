@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New World</title>
+    <title>News World</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
-    <h1>hello World</h1>
+    <header>
+        <div class="title flex justify-between items-center px-5 lg:px-40 py-10 gap-5">
+            <div class="flex justify-between items-center gap-5">
+                <button class="btn btn-button">News</button>
+                <h1 class="text-2xl font-bold">World</h1>
+            </div>
+            <div class="flex items-center justify-center gap-5">
+                <button class="btn btn-button">News</button>
+                <button class="btn btn-button">Blog</button>
+            </div>
+        </div>
+        <hr class="border-1 mx-auto lg:mx-40">
+        <div id="category_container" class="category_div flex flex-col lg:flex-row justify-center items-center gap-5 mt-10">
+        </div>
+
+        <div class="search_section flex flex-col lg:flex-row justify-center items-center mt-10 gap-5">
+            <label class="input input-bordered flex items-center gap-2 w-[50%]">
+                <input id="searchByInput" type="text" class="grow" placeholder="Search" />
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg>
+              </label>
+              <button onclick="searchData()"  class="btn btn-button ">Search</button>
+        </div>
+        <div id="loadingCircle" class=" text-center mt-10">
+            <span class="loading loading-bars loading-lg"></span>
+        </div>
+        <div id="loadData_container" class="loadCategory_data mt-10 px-3 lg:px-40 space-y-5">
+            
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+
+
+    <script src="app.js"></script>
 </body>
 </html>
